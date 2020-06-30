@@ -9,6 +9,10 @@ module.exports = (sequelize, DataTypes) => {
       through: "recipe_ingredients",
       foreignKey: "ingredientId"
     });
+    ingredient.belongsToMany(models.quantity, {
+      through: "ingredient_quantities",
+      foreignKey: "ingredientId"
+    });
   };
   return ingredient;
 };

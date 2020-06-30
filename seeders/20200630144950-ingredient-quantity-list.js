@@ -3,29 +3,29 @@
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.bulkInsert(
-      "recipe_ingredients",
+      "ingredient_quantities",
       [
         {
-          recipeId: 1,
           ingredientId: 1,
+          quantityId: 1,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
-          recipeId: 1,
           ingredientId: 2,
+          quantityId: 2,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
-          recipeId: 1,
           ingredientId: 3,
+          quantityId: 3,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
-          recipeId: 1,
           ingredientId: 4,
+          quantityId: 4,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -35,6 +35,6 @@ module.exports = {
   },
 
   down: (queryInterface, Sequelize) => {
-    return queryInterface.bulkDelete("recipe_ingredients", null, {});
+    return queryInterface.bulkDelete("ingredient_quantities", null, {});
   }
 };
