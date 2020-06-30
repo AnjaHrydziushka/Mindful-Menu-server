@@ -1,4 +1,4 @@
-const { recipe, ingredient, recipe_ingredient } = require("./models");
+const { recipe, ingredient, recipe_ingredient, quantity, ingredient_quantity } = require("./models");
 
 async function listsWithRecipes() {
     const recipes = await recipe.findAll({
@@ -25,6 +25,8 @@ async function listsWithRecipes() {
   
   // ingredientList().then((product) => console.log(product));
 
+
+  // does not work
   async function ingredientsWithAmount() {
     const ingredients = await ingredient.findAll({
       include: { model: recipe_ingredient, attributes: ["amount"] },
@@ -33,4 +35,24 @@ async function listsWithRecipes() {
     return ingredients.map((product) => product.get({ plain: true }));
   }
   
-  ingredientsWithAmount().then((product) => console.log(product));
+  // ingredientsWithAmount().then((product) => console.log(product));
+
+  async function ingredientsWithQuantity() {
+    const ingredients = await ingredient.findAll({
+      include: [quantity],
+    });
+  
+    return ingredients.map((product) => product.get({ plain: true }));
+  }
+
+  //  ingredientsWithQuantity().then((product) => console.log(product));
+
+   async function findQuantities() {
+    const quantities = await quantity.findAll({
+      include: [ingredient],
+    });
+  
+    return quantities.map((product) => product.get({ plain: true }));
+  }
+
+  findQuantities().then((product) => console.log(product));
