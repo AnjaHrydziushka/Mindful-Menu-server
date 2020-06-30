@@ -5,7 +5,10 @@ module.exports = (sequelize, DataTypes) => {
     unit: DataTypes.STRING
   }, {});
   ingredient.associate = function(models) {
-    // associations can be defined here
+    ingredient.belongsToMany(models.recipe, {
+      through: "recipe_ingredients",
+      foreignKey: "ingredientId"
+    });
   };
   return ingredient;
 };
