@@ -39,6 +39,16 @@ module.exports = {
           amount: 50,
           createdAt: new Date(),
           updatedAt: new Date(),
+        },
+        {
+          amount: 150,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          amount: 2,
+          createdAt: new Date(),
+          updatedAt: new Date(),
         }
       ],
       {}

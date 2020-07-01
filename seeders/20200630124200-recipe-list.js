@@ -20,6 +20,14 @@ module.exports = {
           tag: "Lunch",
           createdAt: new Date(),
           updatedAt: new Date(),
+        },
+        {
+          title: "Pita chips",
+          image: "https://live.staticflickr.com/2471/3611012383_10fa5ae0e8_b.jpg",
+          description: "Cut each pita bread into triangles. In a small bowl, combine the oil and spices. Brush each triangle with oil mixture. Bake in the preheated oven for about 7-10 minutes, or until lightly browned and crispy. Watch carefully, as they tend to burn easily!",
+          tag: "Snack",
+          createdAt: new Date(),
+          updatedAt: new Date(),
         }
       ],
       {}

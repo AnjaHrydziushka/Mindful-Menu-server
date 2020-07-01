@@ -52,7 +52,19 @@ module.exports = {
           unit: null,
           createdAt: new Date(),
           updatedAt: new Date(),
-        }
+        },
+        {
+          name: "pita bread (lavash)",
+          unit: "g",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          name: "olive oil",
+          unit: "tbsp",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
       ],
       {}
     );
