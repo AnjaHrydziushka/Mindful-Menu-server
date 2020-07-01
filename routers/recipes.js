@@ -6,7 +6,7 @@ const Ingredient = require("../models").ingredient;
 const Quantity = require("../models").quantity;
 
 // GET list of recipes
-router.get("/test", async (req, res, next) => {
+router.get("/", async (req, res, next) => {
     try {
         const recipes = await Recipe.findAll({ 
             include: {
