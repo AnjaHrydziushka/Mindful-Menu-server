@@ -30,30 +30,6 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          name: "toast bread slices",
-          unit: null,
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-        {
-          name: "cream cheese",
-          unit: "tsp",
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-        {
-          name: "avocado",
-          unit: "g",
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-        {
-          name: "tomato",
-          unit: null,
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-        {
           name: "spinach pasta",
           unit: "g",
           createdAt: new Date(),
@@ -72,25 +48,7 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          name: "spices",
-          unit: null,
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-        {
-          name: "pita bread (lavash)",
-          unit: "g",
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-        {
-          name: "olive oil",
-          unit: "tbsp",
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-        {
-          name: "eggs",
+          name: "salt, spices",
           unit: null,
           createdAt: new Date(),
           updatedAt: new Date(),

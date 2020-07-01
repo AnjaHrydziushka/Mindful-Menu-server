@@ -13,7 +13,7 @@ module.exports = {
         },
         {
           ingredientId: 2,
-          quantityId: 1,
+          quantityId: 2,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -31,70 +31,22 @@ module.exports = {
         },
         {
           ingredientId: 5,
-          quantityId: 1,
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-        {
-          ingredientId: 6,
-          quantityId: 1,
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-        {
-          ingredientId: 7,
           quantityId: 5,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
-          ingredientId: 8,
-          quantityId: 1,
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-        {
-          ingredientId: 9,
+          ingredientId: 6,
           quantityId: 6,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
         {
-          ingredientId: 10,
+          ingredientId: 7,
           quantityId: 7,
           createdAt: new Date(),
           updatedAt: new Date(),
-        },
-        {
-          ingredientId: 11,
-          quantityId: 6,
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-        {
-          ingredientId: 12,
-          quantityId: null,
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-        {
-          ingredientId: 13,
-          quantityId: 8,
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-        {
-          ingredientId: 14,
-          quantityId: 9,
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
-        {
-          ingredientId: 15,
-          quantityId: 1,
-          createdAt: new Date(),
-          updatedAt: new Date(),
-        },
+        }
       ],
       {}
     );

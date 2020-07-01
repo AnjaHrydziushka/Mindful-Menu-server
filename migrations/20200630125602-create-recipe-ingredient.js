@@ -22,9 +22,6 @@ module.exports = {
           key: "id"
         },
       },
-      amount: {
-        type: Sequelize.INTEGER
-      },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE
