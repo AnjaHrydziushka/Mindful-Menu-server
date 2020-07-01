@@ -11,7 +11,7 @@ module.exports = {
           updatedAt: new Date(),
         },
         {
-          amount: 1,
+          amount: 200,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
@@ -22,6 +22,31 @@ module.exports = {
         },
         {
           amount: 125,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          amount: 30,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          amount: 50,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          amount: 100,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          amount: 150,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          amount: 2,
           createdAt: new Date(),
           updatedAt: new Date(),
         },
