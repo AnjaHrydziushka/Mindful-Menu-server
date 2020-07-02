@@ -35,4 +35,24 @@ router.get("/recipes/:id", async (req, res, next) => {
     }
 })
 
+// GET all recipes by one tag
+router.get("/:tag", async (req, res, next) => {
+    try {
+        const tag = req.params.tag
+        console.log("TAG:", req.params)
+        const recipesByTag = await Recipe.findAll({
+            where: {
+                tag: tag
+            }
+        })
+        if(!recipesByTag) {
+            res.status(404).send("Oops! Couldn't find anything")
+        } else {
+            res.send(recipesByTag)
+        } 
+    } catch(e) {
+        next(e)
+    }
+})
+
 module.exports = router;
