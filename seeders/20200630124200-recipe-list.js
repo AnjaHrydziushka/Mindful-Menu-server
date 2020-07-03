@@ -36,6 +36,38 @@ module.exports = {
           tag: "lunch",
           createdAt: new Date(),
           updatedAt: new Date(),
+        },
+        {
+          title: "Chia pudding",
+          image: "https://live.staticflickr.com/3852/14448798451_712c18051f_b.jpg",
+          description: "Stir together your chia seeds and milk in a mason jar or bowl. Leave it overnight in a fridge. In the morning, before eating add fruites or/and berries on yout choice.",
+          tag: "breakfast",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          title: "Zucchini pancakes",
+          image: "https://live.staticflickr.com/1856/42549762820_595e958eb6_b.jpg",
+          description: "Clean and shred zucchini and squeeze the juice out of it. Mix egg, add oat brans, spinach and spices. Mix it with shredded zucchini. Fry pancakes in a pan and serve with sour cream or greek yogurt.",
+          tag: "lunch",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          title: "Homemade ice-cream",
+          image: "https://cdn.pixabay.com/photo/2017/09/16/13/14/chocolate-ice-cream-2755456_960_720.jpg",
+          description: "Cut banana in rounds and put into a friezer for 1 hour. Take it out of a freezer and leave in a room temperature for 20 min. Grind chocolade in small pieces. Soak almonds for 30 min in a water. Mix milk and banana with mixer for 2-3 min, add chocolade and grinded almonds and pour this coctail into forms for icecream. Put it into a freezer untill it freeze.",
+          tag: "snack",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          title: "Chickpea cutlets",
+          image: "https://p2.piqsels.com/preview/64/469/270/falafel-food-vegetarian-snack-thumbnail.jpg",
+          description: "Cook chickpeas in boiled water. Mix it up with greens, flour and garlic with a blender. Make cutlets and fry on a pan. Serve with cutted vegetables and salad leaves.",
+          tag: "dinner",
+          createdAt: new Date(),
+          updatedAt: new Date(),
         }
       ],
       {}

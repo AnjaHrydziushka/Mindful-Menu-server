@@ -3,7 +3,7 @@ module.exports = (sequelize, DataTypes) => {
   const recipe = sequelize.define('recipe', {
     title: DataTypes.STRING,
     image: DataTypes.STRING,
-    description: DataTypes.STRING,
+    description: DataTypes.TEXT,
     tag: DataTypes.STRING
   }, {});
   recipe.associate = function(models) {
