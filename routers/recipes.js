@@ -44,7 +44,6 @@ router.get("/recipes/:id", async (req, res, next) => {
 router.get("/:tag", async (req, res, next) => {
     try {
         const tag = req.params.tag
-        console.log("TAG:", req.params)
         const recipesByTag = await Recipe.findAll({
             where: {
                 tag: tag
