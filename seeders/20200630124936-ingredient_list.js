@@ -65,6 +65,36 @@ module.exports = {
           createdAt: new Date(),
           updatedAt: new Date(),
         },
+        {
+          name: "toast bread slices",
+          unit: null,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          name: "cream cheese",
+          unit: "tsp",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          name: "avocado",
+          unit: "g",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          name: "tomato",
+          unit: "g",
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          name: "eggs",
+          unit: null,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        }
       ],
       {}
     );

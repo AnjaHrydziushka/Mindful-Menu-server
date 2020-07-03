@@ -49,7 +49,17 @@ module.exports = {
           amount: 2,
           createdAt: new Date(),
           updatedAt: new Date(),
-        }
+        },
+        {
+          amount: 30,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          amount: 20,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
       ],
       {}
     );

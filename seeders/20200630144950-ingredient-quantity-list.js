@@ -58,6 +58,36 @@ module.exports = {
           quantityId: 9,
           createdAt: new Date(),
           updatedAt: new Date(),
+        },
+        {
+          ingredientId: 11,
+          quantityId: 1,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          ingredientId: 12,
+          quantityId: 1,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          ingredientId: 13,
+          quantityId: 10,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          ingredientId: 14,
+          quantityId: 11,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          ingredientId: 15,
+          quantityId: 1,
+          createdAt: new Date(),
+          updatedAt: new Date(),
         }
       ],
       {}

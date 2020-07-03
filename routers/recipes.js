@@ -8,7 +8,12 @@ const Quantity = require("../models").quantity;
 // GET list of all recipes
 router.get("/", async (req, res, next) => {
     try {
-        const recipes = await Recipe.findAll();
+        const recipes = await Recipe.findAll({
+            include: {
+                model: Ingredient,
+                include: [Quantity]
+            }
+        });
         res.json(recipes);
     } catch(e) {
         next(e)
@@ -35,7 +40,7 @@ router.get("/recipes/:id", async (req, res, next) => {
     }
 })
 
-// GET all recipes by one tag
+// GET all recipes by tags
 router.get("/:tag", async (req, res, next) => {
     try {
         const tag = req.params.tag

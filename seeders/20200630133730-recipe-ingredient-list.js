@@ -70,6 +70,36 @@ module.exports = {
           ingredientId: 8,
           createdAt: new Date(),
           updatedAt: new Date(),
+        },
+        {
+          recipeId: 4,
+          ingredientId: 11,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          recipeId: 4,
+          ingredientId: 12,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          recipeId: 4,
+          ingredientId: 13,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          recipeId: 4,
+          ingredientId: 14,
+          createdAt: new Date(),
+          updatedAt: new Date(),
+        },
+        {
+          recipeId: 4,
+          ingredientId: 15,
+          createdAt: new Date(),
+          updatedAt: new Date(),
         }
       ],
       {}
