@@ -4,6 +4,8 @@ const router = new Router();
 const Recipe = require("../models").recipe;
 const Ingredient = require("../models").ingredient;
 const Quantity = require("../models").quantity;
+const User = require("../models").user;
+const bcrypt = require('bcrypt');
 
 // GET list of all recipes
 router.get("/", async (req, res, next) => {
@@ -57,6 +59,26 @@ router.get("/:tag", async (req, res, next) => {
     } catch(e) {
         next(e)
     }
-})
+});
+
+//POST sign up
+router.post("/signup", async (req, res, next) => {
+    try {
+      const { email, password } = req.body;
+      if (!email || !password ) {
+        res.status(400).send("Missing parameters");
+      } else {
+        const hashedPassword = bcrypt.hashSync(password, 10);
+        const newUser = await User.create({
+          email,
+          password: hashedPassword,
+        });
+        res.json(newUser);
+      }
+    } catch (e) {
+      next(e);
+    }
+  });
+
 
 module.exports = router;
