@@ -6,6 +6,7 @@ const Ingredient = require("../models").ingredient;
 const Quantity = require("../models").quantity;
 const User = require("../models").user;
 const bcrypt = require('bcrypt');
+const { toJWT, toData } = require('../auth/jwt');
 
 //POST sign up
 router.post("/signup", async (req, res, next) => {
@@ -28,35 +29,33 @@ router.post("/signup", async (req, res, next) => {
 
   //POST login
   router.post("/login", async (req, res, next) => {
-    try {
-      const { email, password } = req.body;
+    const { email, password } = req.body;
   
-      if (!email || !password) {
-        return res
-          .status(400)
-          .send({ message: "Please provide both email and password" });
-      }
-  
-      const user = await User.findOne({ where: { email } });
-  
-      if (!user || !bcrypt.compareSync(password, user.password)) {
-        return res.status(400).send({
-          message: "User with that email not found or password incorrect"
-        });
-      }
-  
-      delete user.dataValues["password"]; // don't send back the password hash
-      const token = toJWT({ userId: user.id });
-  
-      const artworks = await Artwork.findOne({
-        where: { userId: user.id },
-        include: [Bid]
-      })
-  
-      return res.status(200).send({ token, ...user.dataValues, artworks });
-    } catch (error) {
-      console.log(error);
-      return res.status(400).send({ message: "Something went wrong, sorry" });
+    if (!email || !password) {
+      res.status(400).send({
+        message: "Please supply a valid email and password",
+      });
+    } else {
+        const user = await User.findOne({
+            where: {
+              email: email,
+            },
+          });
+          if (!user) {
+            res.status(400).send({
+              message: "User with that email does not exist",
+            });
+          }
+          else if (bcrypt.compareSync(password, user.password)) {
+            const jwt = toJWT({ userId: user.id });
+            res.send({
+              jwt,
+            });
+          } else {
+            res.status(400).send({
+              message: "Password was incorrect",
+            });
+          }
     }
   });
 
