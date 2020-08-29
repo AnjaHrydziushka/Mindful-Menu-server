@@ -1,6 +1,6 @@
 {
   "development": {
-    "url": "postgres://msrdupam:e--kbROCDZzHwwgbmGQxiEwzim6rZYTr@balarama.db.elephantsql.com:5432/msrdupam",
+    "url": "postgres://gliitnke:KOtNc2Hz9zMxyW6A_ABhrpqgMiJsyhTK@balarama.db.elephantsql.com:5432/gliitnke",
     "dialect": "postgres",
     "operatorsAliases": "0"
   },
