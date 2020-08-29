@@ -13,8 +13,8 @@ app.post("/echo", (req, res) => {
     res.json(req.body);
   });
 
-app.use("/", recipesRouter)
-app.use("/", authRouter)
+app.use(recipesRouter);
+app.use(authRouter);
 
 app.listen(PORT, () => {
     console.log(`Listening on port: ${PORT}`);
